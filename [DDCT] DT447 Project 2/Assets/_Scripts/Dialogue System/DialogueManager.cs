@@ -57,7 +57,7 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && IsOngoing)
         {
             AdvanceDialogue();
         }
@@ -151,10 +151,10 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        HideDialoguePanel();
-        OnDialogueEnds?.Invoke();
-        IsOngoing = false;
         Cursor.lockState = CursorLockMode.Locked;
+        HideDialoguePanel();
+        IsOngoing = false;
+        OnDialogueEnds?.Invoke();
     }
 
     public void SubscribeDialogueEndsEvent(UnityEvent ext)

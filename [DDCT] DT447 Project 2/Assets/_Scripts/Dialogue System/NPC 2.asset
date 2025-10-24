@@ -10,23 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b80b44c40c687e44a07621c361d39ab, type: 3}
-  m_Name: StupidNPC
+  m_Name: NPC 2
   m_EditorClassIdentifier: 
   lines:
-  - name: Man
+  - name: Farmer Vendor
     portrait: {fileID: 0}
-    text: I don't know what to say...
+    text: "\u201CGot lost, eh boy?\u201D"
   - name: 
     portrait: {fileID: 0}
-    text: Like, really, I don't know what to say. I just exist in this scene, without
-      story, without context...
+    text: "\u201CDon\u2019t go payin\u2019 much mind to that loony over there 'em
+      spillin\u2019 nonsense.\u201D"
   - name: 
     portrait: {fileID: 0}
-    text: I guess you could follow the lighthouses?
+    text: "\u201CThere\u2019s nothin\u2019 to worry \u2019bout \u2019round \u2019ere.
+      It\u2019s safe! Yer hear me, boy?\u201D"
   - name: 
     portrait: {fileID: 0}
-    text: Don't ask me why there are lighthouses in the farm.
-  - name: ...
+    text: "\u201CSay, ye got a few quid on ye?\u201D"
+  - name: 
     portrait: {fileID: 0}
-    text: (The developer must have grab whatever assets they found and using it without
-      giving it any thought...)
+    text: "\u201CWhat can I say? Man\u2019s gotta eat\u2026 and maybe there\u2019s
+      somethin\u2019 useful for ye too, who knows.\u201D"

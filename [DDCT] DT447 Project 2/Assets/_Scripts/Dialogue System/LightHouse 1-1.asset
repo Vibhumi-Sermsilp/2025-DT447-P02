@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b80b44c40c687e44a07621c361d39ab, type: 3}
-  m_Name: DialogueSO
+  m_Name: LightHouse 1-1
   m_EditorClassIdentifier: 
   lines:
-  - name: Rock
+  - name: ...
     portrait: {fileID: 0}
-    text: Hi, my name is ....
-  - name: Rock
+    text: (The lighthouse stands tall amidst the field of reeds.)
+  - name: 
     portrait: {fileID: 0}
-    text: I am a rock.
-  - name: Rock
+    text: (Over the yonder you spot several more lighthouses. Why there are so many
+      of them in the farm? That being said having one alone would be odd enough.)
+  - name: 
     portrait: {fileID: 0}
-    text: Chicken eats elephant.
+    text: (Exploring inside you found a switch. You flip it with mild trepidation.)

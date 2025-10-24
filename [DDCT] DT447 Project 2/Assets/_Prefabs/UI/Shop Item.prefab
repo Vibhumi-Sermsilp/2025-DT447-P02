@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 110, y: -90}
-  m_SizeDelta: {x: -280, y: 50}
+  m_SizeDelta: {x: -280, y: 75}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &6729623660665326915
 CanvasRenderer:
@@ -385,7 +385,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -30, y: 30}
+  m_AnchoredPosition: {x: -30, y: 20}
   m_SizeDelta: {x: 170, y: 55}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &1463024903205326582
@@ -504,7 +504,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 12.499992, y: 30}
+  m_AnchoredPosition: {x: 12.499992, y: 20}
   m_SizeDelta: {x: -475, y: 55}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &2551036285335700711
@@ -753,6 +753,7 @@ GameObject:
   - component: {fileID: 6467432769759253483}
   - component: {fileID: 6330710562463490022}
   - component: {fileID: 6166552694617184659}
+  - component: {fileID: 8929908835773746339}
   m_Layer: 0
   m_Name: Shop Item
   m_TagString: Untagged
@@ -822,3 +823,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8929908835773746339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558646956839338728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f51937560f0c47246babae2efdef56af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemDesc: 
+  itemPrice: 0
+  m_ItemNameText: {fileID: 1303054994448229787}
+  m_ItemDescText: {fileID: 6937373525617409218}
+  m_ItemPriceText: {fileID: 8997558497811857341}

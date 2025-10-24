@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b80b44c40c687e44a07621c361d39ab, type: 3}
+  m_Name: NPC 1
+  m_EditorClassIdentifier: 
+  lines:
+  - name: Farmer
+    portrait: {fileID: 0}
+    text: "\u201COi! What d\u2019you think you\u2019re doin\u2019, wanderin\u2019
+      \u2019round \u2019ere?\u201D"
+  - name: 
+    portrait: {fileID: 0}
+    text: "\u201CGet off the fields, you daft fool! They\u2019re listenin\u2019,
+      listenin\u2019 right through the stalks! <i>It hears ye, I said!\u201D</i>"
+  - name: 
+    portrait: {fileID: 0}
+    text: "\u201CAin\u2019t no harvest \u2018ere anymore \u2018cause this damned
+      reed\u2019s growing everywhere.\""
+  - name: 
+    portrait: {fileID: 0}
+    text: "\u201CO Mother Spirit! Forgive me\u2014 forgive the lad!\u201D"
+  - name: ...
+    portrait: {fileID: 0}
+    text: (The farmer drops to his knees, muttering prayers in an incomprehensible
+      tongue...)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (You should check the light house beside him... just in case.)
