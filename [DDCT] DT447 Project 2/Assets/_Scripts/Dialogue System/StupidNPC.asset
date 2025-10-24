@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b80b44c40c687e44a07621c361d39ab, type: 3}
+  m_Name: StupidNPC
+  m_EditorClassIdentifier: 
+  lines:
+  - name: Man
+    portrait: {fileID: 0}
+    text: I don't know what to say...
+  - name: 
+    portrait: {fileID: 0}
+    text: Like, really, I don't know what to say. I just exist in this scene, without
+      story, without context...
+  - name: 
+    portrait: {fileID: 0}
+    text: I guess you could follow the lighthouses?
+  - name: 
+    portrait: {fileID: 0}
+    text: Don't ask me why there are lighthouses in the farm.
+  - name: ...
+    portrait: {fileID: 0}
+    text: (The developer must have grab whatever assets they found and using it without
+      giving it any thought...)
