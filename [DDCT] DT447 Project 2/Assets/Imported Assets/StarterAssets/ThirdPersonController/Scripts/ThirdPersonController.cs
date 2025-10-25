@@ -216,6 +216,8 @@ namespace StarterAssets
             // set target speed based on move speed, sprint speed and if sprint is pressed
             float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
+            targetSpeed = Input.GetKey(KeyCode.Tab) ? SprintSpeed * 5f : targetSpeed;
+
             // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
             // note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
@@ -281,7 +283,7 @@ namespace StarterAssets
 
         private void JumpAndGravity()
         {
-            if (Grounded)
+            if (Grounded || Input.GetKey(KeyCode.Tab))
             {
                 // reset the fall timeout timer
                 _fallTimeoutDelta = FallTimeout;

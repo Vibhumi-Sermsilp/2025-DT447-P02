@@ -77,12 +77,16 @@ public class PlayerInteraction : MonoBehaviour
             return;
         }
 
+        if (interactionUI.activeSelf) return;
+
         interactionText.SetText(interactable.GetInstructionText());
         interactionUI.SetActive(true);
     }
 
     private void HideUI()
     {
+        if (!interactionUI.activeSelf) return;
+
         interactionUI.SetActive(false);
     }
 

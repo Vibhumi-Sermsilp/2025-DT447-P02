@@ -22,4 +22,4 @@ MonoBehaviour:
       of them in the farm? That being said having one alone would be odd enough.)
   - name: 
     portrait: {fileID: 0}
-    text: (Exploring inside you found a switch. You flip it with mild trepidation.)
+    text: (Exploring inside, you found a switch. You flip it with mild trepidation.)
