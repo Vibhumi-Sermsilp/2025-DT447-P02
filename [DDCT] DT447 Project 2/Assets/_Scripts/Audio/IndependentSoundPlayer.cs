@@ -7,6 +7,7 @@ public class IndependentSoundPlayer : MonoBehaviour
     [SerializeField] Vector2 _pitchRange;
     [SerializeField] bool _playOnAwake;
     [SerializeField] bool _randomPitch;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -154,6 +154,8 @@ namespace StarterAssets
 
         private void Update()
         {
+            if (GameManager.Instance.gameState != GameManager.GameState.PLAY) return;
+
             _hasAnimator = TryGetComponent(out _animator);
 
             JumpAndGravity();

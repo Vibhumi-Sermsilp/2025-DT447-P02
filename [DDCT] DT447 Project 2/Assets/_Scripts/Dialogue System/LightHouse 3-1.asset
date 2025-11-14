@@ -35,9 +35,3 @@ MonoBehaviour:
   - name: ...
     portrait: {fileID: 0}
     text: (It must be nearby.)
-  - name: ...
-    portrait: {fileID: 0}
-    text: (Yes... it must be...)
-  - name: ...
-    portrait: {fileID: 0}
-    text: '[ Actually there won''t, because I haven''t done it yet ;_; ]'

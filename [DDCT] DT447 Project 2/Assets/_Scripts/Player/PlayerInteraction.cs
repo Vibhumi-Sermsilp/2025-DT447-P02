@@ -11,31 +11,31 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField] private TextMeshProUGUI interactionText;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
+    //void Start() { }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        Interactable interactable = GetInteractable();
+        if (interactable == null)
         {
-            GetInteractable()?.Interact(this);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            GetInteractable()?.AltInteract(this);
+            HideUI();
+            return;
         }
 
         if (GetInteractable() != null)
         {
-            ShowUI(GetInteractable());
+            ShowUI(interactable);
         }
-        else
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            HideUI();
+            interactable?.Interact(this);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            interactable?.AltInteract(this);
         }
     }
 
@@ -43,6 +43,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         List<Interactable> interactables = new List<Interactable>();
         Collider[] colliders = Physics.OverlapSphere(transform.position, interactionRange, interactionLayerMask);
+
         foreach (Collider collider in colliders)
         {
             if (collider.TryGetComponent<Interactable>(out Interactable interactable))
