@@ -15,4 +15,14 @@ MonoBehaviour:
   lines:
   - name: ...
     portrait: {fileID: 0}
-    text: 
+    text: (Ascending the light house seems like a second nature to you now.)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (You have been follow along the only lead you have, thinking that this
+      is the only option.)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (Is this... your only option?)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (Or is this even the right choice?)

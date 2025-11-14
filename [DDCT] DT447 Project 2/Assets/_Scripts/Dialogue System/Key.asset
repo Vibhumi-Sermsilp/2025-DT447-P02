@@ -18,7 +18,7 @@ MonoBehaviour:
     text: ...
   - name: ...
     portrait: {fileID: 0}
-    text: (The sight of the headstone before you lefts you speachless.)
+    text: (The sight of the headstone before you lefts you speechless of sudden realization.)
   - name: ...
     portrait: {fileID: 0}
     text: (The weathered groves etched on it form a strage yet familiar name.)
@@ -50,4 +50,4 @@ MonoBehaviour:
     text: (A rusty key is slapped on the face of the stone.)
   - name: ...
     portrait: {fileID: 0}
-    text: (You picked it up.)
+    text: (You picked it up. The rusted metal is cool to the touch.)

@@ -1,3 +1,4 @@
+using AudioSystem;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
@@ -6,6 +7,8 @@ using UnityEngine.Events;
 public class EnemyAI : MonoBehaviour
 {
     [Header("Move")]
+    [SerializeField] private LayerMask enemyLayerMask;
+    [SerializeField] private bool active = false;
     [SerializeField] private Renderer m_Renderer;
     [SerializeField] private Transform m_player;
     [SerializeField] private Camera m_playerCamera;
@@ -18,6 +21,7 @@ public class EnemyAI : MonoBehaviour
     private bool catched = false;
 
     [Header("Animation")]
+    [SerializeField] private Light _light;
     [SerializeField] private float _speedChangeRate = 10f;
     private Animator _animator;
     private int _animIDSpeed;
@@ -42,6 +46,19 @@ public class EnemyAI : MonoBehaviour
 
         _animIDSpeed = Animator.StringToHash("Speed");
         _animIDMotionSpeed = Animator.StringToHash("MotionSpeed");
+
+        SetActive(active);
+    }
+
+    public void SetActive(bool value)
+    {
+        active = value;
+        _light.enabled = value;
+    }
+
+    public void SetAlert(bool value)
+    {
+        alert = value;
     }
 
     // Update is called once per frame
@@ -53,6 +70,32 @@ public class EnemyAI : MonoBehaviour
         UpdateAnmation();
     }
 
+    private void WakeUp()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, chaseDistance, enemyLayerMask);
+
+        foreach (Collider collider in colliders)
+        {
+            if (collider.TryGetComponent(out EnemyAI enemy))
+            {
+                enemy.SetActive(true);
+            }
+        }
+    }
+
+    private void StandBy()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, chaseDistance, enemyLayerMask);
+
+        foreach (Collider collider in colliders)
+        {
+            if (collider.TryGetComponent(out EnemyAI enemy))
+            {
+                enemy.SetAlert(false);
+            }
+        }
+    }
+
     private void Chase()
     {
         //Calculate the player's Camera's frustum planes
@@ -60,14 +103,18 @@ public class EnemyAI : MonoBehaviour
         float distance = Vector3.Distance(transform.position, m_player.position);
 
         //If the AI is in the player's Camera's view,
-        if (GeometryUtility.TestPlanesAABB(planes, m_Renderer.bounds) || distance > chaseDistance)
+        if (GeometryUtility.TestPlanesAABB(planes, m_Renderer.bounds) || distance > chaseDistance || !active)
         {
             m_agent.speed = 0;
             m_agent.SetDestination(transform.position);
         }
+        else if (active)
+        {
+            WakeUp();
+        }
 
         //If the AI isn't in the player's Camera's view,
-        if (!GeometryUtility.TestPlanesAABB(planes, m_Renderer.bounds) && (distance <= chaseDistance || alert))
+        if (!GeometryUtility.TestPlanesAABB(planes, m_Renderer.bounds) && (distance <= chaseDistance || alert) && active)
         {
             alert = true;
 
@@ -89,8 +136,11 @@ public class EnemyAI : MonoBehaviour
 
     private IEnumerator OnCatchRoutine()
     {
+        StandBy();
         m_player.gameObject.SetActive(false);
+        AudioManager.instance.PlayAudio("JumpScare");
         yield return new WaitForSeconds(3f);
+        AudioManager.instance.StopAudio("JumpScare");
         OnReleaseEvent.Invoke();
         GameManager.Instance.Respawn();
         GameManager.Instance.Resume();

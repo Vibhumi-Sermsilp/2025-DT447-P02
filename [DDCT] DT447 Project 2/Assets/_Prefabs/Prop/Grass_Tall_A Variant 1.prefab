@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 183118, guid: 303e052397d101d4593b4a0653331030, type: 3}
       propertyPath: m_Name
-      value: Grass_Tall_A Variant
+      value: Grass_Tall_A Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 477970, guid: 303e052397d101d4593b4a0653331030, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55,7 +55,7 @@ PrefabInstance:
     - target: {fileID: 2368810, guid: 303e052397d101d4593b4a0653331030, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b8d27c859d7240046a81163f885b1285, type: 2}
+      objectReference: {fileID: 2100000, guid: 6047b5ff9f92e7546b0fe5b32dddb03c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -83,10 +83,24 @@ MonoBehaviour:
   BGMAudioMixer: {fileID: -8357283139304543866, guid: 9cfe164566027a94f933bfeaae68d900, type: 2}
   SFXAudioMixer: {fileID: -2704995241120402782, guid: 9cfe164566027a94f933bfeaae68d900, type: 2}
   bGMIndex: ffffffff
-  BGMSounds: []
+  BGMSounds:
+  - name: Suspense
+    audioClip: {fileID: 8300000, guid: 5736fa06a23d8404cad6048cdb677a76, type: 3}
+    volume: 1
+    pitch: 1
+    stereoPan: 0
+    loop: 1
+    source: {fileID: 0}
   SFXSounds:
   - name: Metal Clank
     audioClip: {fileID: 8300000, guid: b0ce3d58329b1d744a34916bff38a1a9, type: 3}
+    volume: 1
+    pitch: 1
+    stereoPan: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: JumpScare
+    audioClip: {fileID: 8300000, guid: f3790292448bc86448786944e816bc17, type: 3}
     volume: 1
     pitch: 1
     stereoPan: 0

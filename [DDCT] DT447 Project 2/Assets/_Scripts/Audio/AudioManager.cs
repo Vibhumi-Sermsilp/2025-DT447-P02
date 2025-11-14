@@ -115,6 +115,15 @@ namespace AudioSystem
             StartCoroutine(BGMAudioFade.CrossFade(audioMixer, 0.5f, null, BGMSounds));
         }
 
+        public void StopBGM(float fade)
+        {
+            // ---------------- Calling Method ----------------
+            // AudioManager.instance.StopBGM();
+            // ------------------------------------------------
+
+            StartCoroutine(BGMAudioFade.CrossFade(audioMixer, fade, null, BGMSounds));
+        }
+
         public void StopBGM(string name)
         {
             // ---------------- Calling Method ----------------

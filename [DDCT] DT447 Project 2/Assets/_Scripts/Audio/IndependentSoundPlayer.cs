@@ -29,4 +29,14 @@ public class IndependentSoundPlayer : MonoBehaviour
     {
         AudioManager.instance.PlayRandomPitchAudio(name, min, max);
     }
+
+    public void SwitchBGM(string name)
+    {
+        AudioManager.instance.SwitchBGM(name);
+    }
+
+    public void StopBGM()
+    {
+        AudioManager.instance.StopBGM(3f);
+    }
 }
