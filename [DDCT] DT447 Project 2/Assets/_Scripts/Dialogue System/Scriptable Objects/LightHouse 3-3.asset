@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b80b44c40c687e44a07621c361d39ab, type: 3}
+  m_Name: LightHouse 3-3
+  m_EditorClassIdentifier: 
+  lines:
+  - name: ...
+    portrait: {fileID: 0}
+    text: (The way you follow the these lighthouses...)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (...does not seem to be much of a different on how you lived your life.)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (Always hop from one lead to another despite how absurd or meaningless
+      they may seem.)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (Just like how absurd it is to have a light house in a farm field.)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (People who are lost often try their best to grasp on to any thread just
+      to move forward.)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (Such there is a comfort in getting led by a string.)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (And to find the strength to move on your own, it's a path of unbearable
+      suffering.)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (Beside the switch you spy a parchment with crudely drawn lines and symbols.)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (It is a map.)
+  - name: ...
+    portrait: {fileID: 0}
+    text: (You decided to take it with you. It should aid you well in this journey.)
+  - name: ...
+    portrait: {fileID: 0}
+    text: '(You got a [Farm Field Map].)
+
+      <i>Press M to open the map.</i>'
