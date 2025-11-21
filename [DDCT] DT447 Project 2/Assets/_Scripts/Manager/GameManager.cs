@@ -40,6 +40,11 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.M) && hasMap)
         {
+            if (gameState == GameState.PLAY)
+                Pause();
+            else
+                Resume();
+
             mapPanel.SetActive(!mapPanel.activeSelf);
         }
     }

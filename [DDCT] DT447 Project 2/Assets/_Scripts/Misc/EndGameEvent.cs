@@ -17,6 +17,11 @@ public class EndGameEvent : MonoBehaviour
 
     public void TriggerEndGameEvent()
     {
+        GetComponent<DialogueTrigger>().StartDialogue();
+    }
+
+    public void Reload()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
